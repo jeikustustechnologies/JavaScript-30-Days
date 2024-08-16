@@ -1,0 +1,60 @@
+body,
+h1,
+div {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.key {
+    background: #444;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.2s, transform 0.07s;
+    cursor: pointer;
+}
+
+.key kbd {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.key span {
+    display: block;
+    font-size: 1rem;
+}
+
+.pressed {
+    background: #555;
+    transform: scale(0.98);
+}
